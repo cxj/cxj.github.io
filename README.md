@@ -1,4 +1,4 @@
 cxj.github.io
 =============
 
-Blog
+A Software Construction Blog
