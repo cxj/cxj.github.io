@@ -26,10 +26,10 @@
       <div class="inner clearfix">
         <section id="main-content">
 
-<p>This is a test:  {{ 'now' | date: "%B %d, %Y" }} </p>
+<p>Desired format: {{ 'now' | date: "%B %d, %Y" }} </p>
 
-</p>page.date: {{ page.date | date: "%B %d, %Y }}</p>
-</p>post.date: {{ post.date | date: "%h %d, %Y }}</p>
+</p>page.date: {{ page.date }}</p>
+</p>page.date filtered: {{ page.date | date: "%B %d, %Y }}</p>
 
         {{ content }}
 
