@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<p>This is a test:  {{ 'now' | date: "%Y %h" }} </p>
 <p>This is a test:  {{ 'now' | date: "%B %d, %Y" }} </p>
 
 </p>{{ page.date | date: "%B %d, %Y }}</p>
-</p>{{ page.date | date: "%h %d, %Y }}</p>
+</p>{{ post.date | date: "%h %d, %Y }}</p>
 
 <div id="post">
     {{ content }}
