@@ -28,7 +28,8 @@
 
 <p>Desired format: {{ 'now' | date: "%B %d, %Y" }} </p>
 
-</p>{{ 'page.date' | date: "%B %d, %Y }}</p>
+</p>{{ page.date | date: page.date, "%B %d, %Y" }}</p>
+</p>{{ page.date | date: "%B %d, %Y" }}</p>
 
         {{ content }}
 
