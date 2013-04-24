@@ -3,8 +3,20 @@ layout: post
 title: Using Burp with SSL Web Service Client
 ---
 
-Developing a web service client is sometimes easier when one can see the actual data being exchanged.  In this case, the service provided used SOAP and SSL, which made the picture a bit more comples.
+Building a web service client can be easier when one can see the actual data    being exchanged.  If the web service uses SOAP and SSL, the task is a bit more  complex.
 
-I had a simple proxy which could nicely display SOAP messages, but it only spoke HTTP.  While the client could speak either HTTP or HTTPS, the server only allowed HTTPS connections.  I needed something to speak HTTP to my client on one side and HTTPS to the server.  Enter [Burp](http://portswigger.net/burp/).
+[Tcpmon](http://ws.apache.org/tcpmon/) is a simple proxy which formats XML messages, but it only speaks HTTP.  While my client can speak either HTTP or HTTPS, the server only allows HTTPS connections.  I needed a proxy to speak HTTP to my client on one side and HTTPS to the server.  Enter [Burp](http://portswigger.net/burp/).
 
+1.  Obtain Burp.
+2.  Launch Burp (e.g. java -jar burpsuite.jar)
 
+    By default, it listens on localhost (127.0.0.1) port 8080.
+
+3.  Configure settings.  For this purpose, these are the basics:
+    1. Proxy -> Intercept:  Intercept is on
+    2. Proxy -> Options:
+        1.  Click listener listed to highlight, then Edit button to change.
+        2.  If you want a different IP address or port, change them on the Binding tab.
+        3.  On the Request handling tab, enable invisible proxy support (most non-web browser clients will not be proxy aware).
+        4.  Enter the HTTPS server address in the Redirect box.
+        5.  Enable Force use of SSL.
