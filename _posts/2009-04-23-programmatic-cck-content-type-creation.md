@@ -181,7 +181,9 @@ Write the install code to initiate creation of the new content type. This is whe
           . '/modules/content_copy/content_copy.module';
 
       $form_state['values']['type_name'] = '<create>';
-      $form_state['values']['macro'] = '$content = ' . var_export($content, TRUE) . ';';
+      $form_state['values']['macro'] = '$content = '
+                                      . var_export($content, TRUE)
+                                      . ';';
 
       // form provided by content_copy.module  
       drupal_execute('content_copy_import_form', $form_state);

@@ -93,6 +93,14 @@ header h2 {
   position: relative;
   width: 940px;
   margin: 0 auto;
+  padding-left: 2.7em;
+}
+
+.inner2 {
+  position: relative;
+  width: 740px;
+  margin: 0 auto;
+  padding-left: 2.7em;
 }
 
 #content-wrapper {
@@ -101,8 +109,9 @@ header h2 {
 }
 
 #main-content {
-  width: 790px;
+  width: 690px;
   float: left;
+  border: 1px solid blue;
 }
 
 #main-content img {
@@ -110,7 +119,7 @@ header h2 {
 }
 
 aside#sidebar {
-  width: 100px;
+  width: 200px;
   padding-left: 20px;
   min-height: 504px;
   float: right;
@@ -226,7 +235,8 @@ form {
 
 #main-content h1 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 2.8em;
+  Xfont-size: 2.8em;
+  font-size: 28px;
   letter-spacing: -1px;
   color: #474747;
   margin-bottom: 0.5em;
@@ -235,22 +245,23 @@ form {
 #main-content h1:before {
   content: "/";
   color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -0.9em;
+  padding-right: 0.2em;
+  margin-left: -0.7em;
 }
 
 #main-content h2 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
   font-size: 22px;
   font-weight: bold;
+  letter-spacing: -1px;
   margin-bottom: 8px;
   color: #474747;
 } 
 #main-content h2:before {
   content: "//";
   color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -1.5em;
+  padding-right: 0.2em;
+  margin-left: -1.2em;
 }
 
 #main-content h3 {
@@ -265,8 +276,8 @@ form {
 #main-content h3:before {
   content: "///";
   color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2em;
+  padding-right: 0.2em;
+  margin-left: -1.8em;
 }
 
 #main-content h4 {
@@ -279,8 +290,8 @@ form {
 h4:before {
   content: "////";
   color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2.8em;
+  padding-right: 0.2em;
+  margin-left: -2.4em;
 }
 
 #main-content h5 {
@@ -292,7 +303,7 @@ h5:before {
   content: "/////";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -3.2em;
+  margin-left: -2.5em;
 }
 
 #main-content h6 {
@@ -303,8 +314,8 @@ h5:before {
 h6:before {
   content: "//////";
   color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -3.7em;
+  padding-right: 0.5em;
+  margin-left: -2.95em;
 }
 
 p {
