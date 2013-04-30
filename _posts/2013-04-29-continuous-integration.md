@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Continuous Integration Reminders
+title: Software Construction Reminders
 ---
 
-## Continuous Integration and Software Development Infrastructure
+## Continuous Integration Infrastructure Best Practices
 
-This is a list of best practices for Continuous Integration and Software Development.  Derived from a list by Barry Jaspan.
+This list derived from an article by Barry Jaspan.
 
 1. Use a source code repository. This is step zero for good software development.
 
