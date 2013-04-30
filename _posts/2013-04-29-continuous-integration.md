@@ -3,8 +3,6 @@ layout: post
 title: Continuous Integration Reminders
 ---
 
-# Best Practice Reminders
-
 ## Continuous Integration and Software Development Infrastructure
 
 This is a list of best practices for Continuous Integration and Software Development.  Derived from a list by Barry Jaspan.
