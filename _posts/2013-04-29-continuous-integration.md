@@ -7,10 +7,10 @@ title: Continuous Integration Reminders
 
 ## Continuous Integration and Software Development Infrastructure
 
-This is a list of best practices reminders for Continuous Integration and Software Development.  Derived from a list by Barry Jaspan.
+This is a list of best practices for Continuous Integration and Software Development.  Derived from a list by Barry Jaspan.
 
 1. Use a source code repository. This is step zero for good software development.
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+
 2. Make small, frequent changes. All developers should commit their changes frequently. This reduces the inevitable conflicts and lets problems surface sooner. Also, small, frequent changes enable small, frequent releases, making all the rest of the principles more valuable.
 
 3. Automate testing. Have your repository automatically integrated with a testing environment, so that every commit triggers a test run. This way, you know immediately if something broke.
