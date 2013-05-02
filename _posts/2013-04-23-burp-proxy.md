@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Using Burp with SSL Web Service Client
+title: Burp as a Web Service Proxy
 ---
 
-Building a web service client can be easier when one can see the actual data    being exchanged.  If the web service uses SOAP and SSL, the task is a bit more  complex.
+Building a web service client can be easier when one can see the actual data    being exchanged.  If the web service uses SSL, this can be difficult.
 
-[Tcpmon](http://ws.apache.org/tcpmon/) is a simple proxy which formats XML messages, but it only speaks HTTP.  While my client can speak either HTTP or HTTPS, the server only allows HTTPS connections.  I needed a proxy to speak HTTP to my client on one side and HTTPS to the server.  Enter [Burp](http://portswigger.net/burp/).
+There are a variety of proxies one can use to view HTTP message exchanges but few support SSL.  Enter [Burp](http://portswigger.net/burp/).
 
 1.  Obtain Burp.
 2.  Launch Burp (e.g. java -jar burpsuite.jar)
