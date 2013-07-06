@@ -52,8 +52,7 @@ stmt_retry:
             /* we deferred the prepare until now, because we didn't
              * know anything about the parameter types; now we do */
             S->result = PQprepare(H->server, S->stmt_name, S->query,
-                        stmt->bound_params ? zend_hash_num_elements(stmt-       >bound_params) : 0,
-                        S->param_types);
+                        stmt->bound_params ? zend_hash_num_elements(stmt->bound_params) : 0, S->param_types);
 {% endhighlight %}
 
 Well, that's a heckuva note, as they might say in northern Minnesota.  For PostgreSQL, PDO always *simulates* prepared statements, no matter what the setting of PDO::setAttribute(PDO::ATTR_EMULATE_PREPARES, *boolean*) is.  This makes it hard to write code with good error handling.
