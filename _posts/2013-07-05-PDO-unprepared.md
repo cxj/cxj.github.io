@@ -42,7 +42,7 @@ If this were MySQL, we would get an error message right there telling us the SQL
 
 The reason is because the PHP PDO driver for PostgreSQL *defers* the call to the server for prepared statements until during the [PDOStatement::execute()](http://php.net/manual/en/pdostatement.execute.php) call.  Here's the code from [hp-src/ext/pdo_pgsql/pgsql_statement.c](https://github.com/php/php-src/blob/PHP-5.3.15/ext/pdo_pgsql/pgsql_statement.c):
 
-{% highlight C %}
+{% highlight c %}
 #if HAVE_PQPREPARE
     if (S->stmt_name) {
         /* using a prepared statement */
