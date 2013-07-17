@@ -90,3 +90,9 @@ $delta = microtime(true) - $start;
 
 echo "test2 (loop) elapsed time:    " . sprintf("%8.5f\n", $delta);
 {% endhighlight %}
+
+Sample output:
+
+    php extract.php
+    test1 (extract) elapsed time:  0.17561
+    test2 (loop) elapsed time:     0.09619
