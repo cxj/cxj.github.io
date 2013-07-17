@@ -30,17 +30,15 @@ Here's my quick and dirty benchmark.
 $REQ = array(
     'tid' => 1372460988,
     'dest' => 'report',
-    'data_source' => 'bill',
-    'user_input' => '',
-    'myclient_dd' => '',
-    'finder' => array(
-                    'myclient' => '897462694',
+    'source' => 'bill',
+    'params' => array(
+                    'client' => '897462694',
                     'client_ref_id' => array(
-                                        0 => '21707837'
+                                        0 => '3707837'
                                     ),
                     'invoice_ref_id' => '',
-                    'user_id_0' => '55026',
-                    'user_id_1' => '94265',
+                    'user_id_0' => 'A5026',
+                    'user_id_1' => 'K4265',
                     'user_id_2' => '',
                     'user_id_3' => '',
                     'user_id_4' => '',
