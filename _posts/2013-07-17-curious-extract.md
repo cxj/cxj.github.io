@@ -6,6 +6,7 @@ title: The Curious Case of PHP's extract()
 I'm working on legacy PHP code used for an extranet website.  A previous developer's code handles many forms by ultimately globalizing the form variables in a manner similar to the code sketch below:
 
 {% highlight php %}
+<?php
 $params = null;
 $count = extract($_REQUEST, EXTR_IF_EXISTS);
 
@@ -14,6 +15,7 @@ $count = extract($_REQUEST, EXTR_IF_EXISTS);
 if (is_array($params)) {
     extract($params);
 }
+?>
 {% endhighlight %}
 
 I believe this rather gratuitous use of extract() leaves something to be desired.  If it's used _very_ carefully, it can be made secure from various injection attacks.  But it's easy to make a mistake.  So I thought I'd see if I could find another way to make legacy code still work, but avoid the weak points.
@@ -27,6 +29,7 @@ The time difference is small for 10,000 iterations, so will be very small for th
 Here's my quick and dirty benchmark.
 
 {% highlight php %}
+<?php
 $REQ = array(
     'tid' => 1372460988,
     'dest' => 'report',
@@ -89,6 +92,7 @@ test2($iterations, $REQ);
 $delta = microtime(true) - $start;
 
 echo "test2 (loop) elapsed time:    " . sprintf("%8.5f\n", $delta);
+?>
 {% endhighlight %}
 
 Sample output:
