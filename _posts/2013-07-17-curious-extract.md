@@ -3,8 +3,6 @@ layout: post
 title: The Curious Case of PHP's extract()
 ---
 
-  Enter [Burp](http://portswigger.net/burp/).
-
 I'm working on legacy PHP code used for an extranet website.  A previous developer's code handles many forms by ultimately globalizing the form variables in a manner similar to the code sketch below:
 
 {% highlight php %}
