@@ -30,18 +30,24 @@ The next page produces a large textarea with the necessary PHP code to define yo
 
 The template of the function will look like this, prior to pasting the contents of your copy buffer from above (containing the exported CCK content type definition code). We use a separate function just for the definition because it is must be updated with a new export from CCK if we decide to change or tweak our CCK content type later. It makes editing easier and less error prone.
 
+{% highlight php %}
+<?php
     function _modulename_cck_export() {
       // paste code after this line.
 
       // paste code before this line.
       return $content;
     }
+?>
+{% endhighlight %}
 
 ----
 ## Step 4: Carefully paste the exported CCK content type code into the function
 
 The end result should look like this:
 
+{% highlight php %}
+<?php
     function _modulename_cck_export() {
       // paste code after this line.
       $content[type]  = array (
@@ -150,17 +156,27 @@ The end result should look like this:
       // paste code before this line.
       return $content;
     }
+?>
+{% endhighlight %}
 
 ----
 ## Step 5: Optionally clean up the pasted code
 
 You may want to edit any string array indexes to be enclosed in single quote marks to avoid PHP warnings. I'm not sure why CCK exports faulty code like this. For example, as exported, the last array element is given as
 
+{% highlight php %}
+<?php
     $content[extra] = array (
+?>
+{% endhighlight %}
 
 but really should be expressed as
 
+{% highlight php %}
+<?php
     $content['extra'] = array (
+?>
+{% endhighlight %}
 
 
 ----
@@ -168,6 +184,8 @@ but really should be expressed as
 
 Write the install code to initiate creation of the new content type. This is where we make sure we have the necessary CCK pieces, populate a form using the now hard-coded CCK export, and then use drupal_execute() to submit the form to create the new content type. Here's an example:
 
+{% highlight php %}
+<?php
     function _example_install_cck_node() {
       /* get the CCK node types to be created.  This is where you load the 
        * file containing your function from above, if necessary, and then call
@@ -189,6 +207,8 @@ Write the install code to initiate creation of the new content type. This is whe
       drupal_execute('content_copy_import_form', $form_state);
       content_clear_type_cache();
     }
+?>
+{% endhighlight %}
 
 ----
 ## Step 7: Call the create function from your module

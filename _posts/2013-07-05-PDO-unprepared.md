@@ -10,6 +10,7 @@ Well, sort of.  The situation is complicated.
 The first complication is for some database drivers, emulation is turned on by default, but can be explicitly turned off.  To turn off emulation mode, one must use the [PDO::setAttribute()](http://php.net/manual/en/pdo.setattribute.php) method.  Example:
 
 {% highlight php %}
+<?php
 try {
     $pdo = new PDO("pgsql:host=server;dbname=mydatabase");
 } catch (PDOExceoption $e) {
@@ -20,6 +21,7 @@ try {
 if (! $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false)) {
     echo "Note: emulation mode not disabled.\n";
 }
+?>
 {% endhighlight %}
 
 Ok, so now PDO's emulation is disabled.  In theory, we can now use prepared statements, and take advantages of their benefits.  One benefit might to check SQL statements for correctness before actually trying to execute them.  In fact, database servers such as PostgreSQL and MySQL do this with prepared statements.
@@ -27,11 +29,13 @@ Ok, so now PDO's emulation is disabled.  In theory, we can now use prepared stat
 Let's try it with an intentional mistake to see what happens.
 
 {% highlight php %}
+<?php
 $sth = $pdo->prepare('SELECT FROM :name');
 if ($sth == false) {
     echo "prepare() failed\n";
     echo "[prepare] errorInfo = " . print_r($sth->errorInfo(), true);
 }
+?>
 {% endhighlight %}
 
 For our example code above using PostgreSQL, there is actually no output.  The call to prepare() does not throw an error.
