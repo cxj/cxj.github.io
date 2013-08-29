@@ -82,13 +82,13 @@ function test2($iterations, $var) {
 $iterations = 50000;
 
 $start = microtime(true);
-test1($iterations, $REQ);
+test1($iterations, $REQ['params']);
 $delta = microtime(true) - $start;
 
 echo "test1 (extract) elapsed time: " . sprintf("%8.5f\n", $delta);
 
 $start = microtime(true);
-test2($iterations, $REQ);
+test2($iterations, $REQ['params']);
 $delta = microtime(true) - $start;
 
 echo "test2 (loop) elapsed time:    " . sprintf("%8.5f\n", $delta);
