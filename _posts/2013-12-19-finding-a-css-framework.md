@@ -17,4 +17,4 @@ Since my time is in short supply, just like everyone, one that is fairly simple 
 
 I also think I want a framework that is semantic, as my design decisions for UI appearance might well need to be changed by someone with a much better eye for design.  Semantic web page mark up also has other benefits.
 
-As I work my way through exmaning each framework, I'll be writing more about my impression of each.
+As I work my way through examining each framework, I'll be writing more about my impression of each.
