@@ -5,7 +5,7 @@ title: Finding a CSS Framework
 
 I’m a web back-end developer, primarily.  My bread and butter is PHP and C++.  But I also get called on to do front-end web work as well.  I’m comfortable with HTML, CSS, and Javascript.
 
-I want to make my life easier when I do front-end work.  So I’ve been investigating frameworks to help me do that.  The initial list of candidates I want to research and try are: [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Pure](http://purecss.io/), [InK](http://ink.sapo.pt/), [Blueprint](http://blueprintcss.org), [Skeleton](http://www.getskeleton.com/), [Gumby](http://gumbyframework.com/), [Inuit.css](https://github.com/csswizardry/inuit.css/), [HTML5 Boilerplate](http://html5boilerplate.com/), [Bourbon Neat](http://neat.bourbon.io/), [Workless](http://workless.ikreativ.com/), [320andUp](https://gitub.com/malarkey/320andup/) and [Semantic UI](http://semantic-ui.com/).
+I want to make my life easier when I do front-end work.  So I’ve been investigating frameworks to help me do that.  The initial list of candidates I want to research and try are: [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Pure](http://purecss.io/), [InK](http://ink.sapo.pt/), [Blueprint](http://blueprintcss.org), [Skeleton](http://www.getskeleton.com/), [Gumby](http://gumbyframework.com/), [Inuit.css](https://github.com/csswizardry/inuit.css/), [HTML5 Boilerplate](http://html5boilerplate.com/), [Bourbon Neat](http://neat.bourbon.io/), [Workless](http://workless.ikreativ.com/), [320andUp](https://github.com/malarkey/320andup/) and [Semantic UI](http://semantic-ui.com/).
 
 I’m sure there’s more!  You can imagine how one’s head starts to spin after just half a dozen.
 
