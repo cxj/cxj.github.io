@@ -13,7 +13,7 @@ Because I want to fit my choice into rewriting and refactoring existing web appl
 
 As a couple of my existing web applications have some super-heavy HTML forms (200+ input elements), I think I need to favor lightweight frameworks.
 
-Since my time is in short supply, just like everyone, one that is fairly simple and doesn’t require complicated development infrastructure is attractive.
+As my time is in short supply (just like everyone else), a framework that is fairly simple and doesn’t require complicated development infrastructure is attractive.
 
 I also think I want a framework that is semantic, as my design decisions for UI appearance might well need to be changed by someone with a much better eye for design.  Semantic web page mark up also has other benefits.
 
