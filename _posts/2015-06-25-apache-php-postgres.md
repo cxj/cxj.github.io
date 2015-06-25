@@ -22,7 +22,7 @@ and the other was use of the
 .
 
 Both methods are portable across any language which uses the libpq library, so
-they seemed like one or the other, or both, would be a good fit for our
+it seemed like one or the other, or both, would be a good fit for our
 environment.  In initial testing from the command line, all appeared to work
 well.  Then we started testing Apache PHP, and encountered strange problems.
 
