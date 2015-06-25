@@ -61,7 +61,7 @@ a healthy distrust for using the Password File.
 
 Initial tests in web applications with the Connection Service File looked
 slightly more promising, but due to the strange behavior we saw with the
-Password File, and that both methods required the `putenv()`, our
+Password File, and that both methods required the `putenv()` call, our
 confidence was low.  We have so far not done further extensive testing of
 the Connection Service File method.  Insetead we decided for the moment to
 live with the duplicated efforts of maintaining two password files, one
