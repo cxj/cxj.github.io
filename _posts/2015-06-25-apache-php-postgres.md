@@ -71,5 +71,5 @@ that is, applications that are not running PHP from Apache.  The second
 copy is a INI format file read by a custom configuration class for PHP
 web applications.
 
-This result leaves me unsatisfied, so I have no given up on getting to
+This result leaves me unsatisfied, so I have not given up on getting to
 the bottom of this problem and finding a better solution.
