@@ -37,12 +37,15 @@ obtained the correct values from the
 enviroment and then just put them right back.  
 
 For the Password File, my code looked like this:
+
 ```php
-putenv('PGPASSFILE=' . getenv('PGPASSFILE'));
+    putenv('PGPASSFILE=' . getenv('PGPASSFILE'));
 ```
+
 And for the Connection Service File, it looked like this:
+
 ```php
-putenv('PGSYSCONFDIR=' . getenv('PGSYSCONFDIR'));
+    putenv('PGSYSCONFDIR=' . getenv('PGSYSCONFDIR'));
 ```
 
 My tests with the above code for the Password File seemed to work.  Then a
