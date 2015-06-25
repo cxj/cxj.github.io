@@ -16,9 +16,9 @@ doing authentication which are helpful in improving security.  We evaluated
 two of these.
 
 One method was the
-[Password File (.pgpass)](http://www.postgresql.org/docs/9.4/static/libpq-      pgpass.html)
+[Password File (.pgpass)](http://www.postgresql.org/docs/9.4/static/libpq-pgpass.html)
 and the other was use of the
-[Connection Service File (pg_service.conf)](http://www.postgresql.org/docs/9.4/ static/libpq-pgservice.html)
+[Connection Service File (pg_service.conf)](http://www.postgresql.org/docs/9.4/static/libpq-pgservice.html)
 .
 
 Both methods are portable across any language which uses the libpq library, so
