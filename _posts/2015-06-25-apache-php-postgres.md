@@ -62,13 +62,14 @@ a healthy distrust for using the Password File.
 Initial tests in web applications with the Connection Service File looked
 slightly more promising, but due to the strange behavior we saw with the
 Password File, and that both methods required the `putenv()` call, our
-confidence was low.  We have so far not done further extensive testing of
-the Connection Service File method.  Insetead we decided for the moment to
+confidence was low.  We have not yet done further extensive testing of
+the Connection Service File method.  Instead, we decided for the moment to
 live with the duplicated efforts of maintaining two password files, one
 for the rest of the operation that can use either the Password File
 (.pgpass) or the Connection Service File (pg_service.conf) successfully --
 that is, applications that are not running PHP from Apache.  The second
-copy is a INI format file read by a custom configuration class.
+copy is a INI format file read by a custom configuration class for PHP
+web applications.
 
 This result leaves me unsatisfied, so I have no given up on getting to
 the bottom of this problem and finding a better solution.
