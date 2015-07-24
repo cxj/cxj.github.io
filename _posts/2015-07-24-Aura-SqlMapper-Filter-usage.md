@@ -12,9 +12,8 @@ timestamp used to record the date and time of the change to the table row.
 The Aura software is [here on Github](https://github.com/auraphp/Aura.SqlMapper_Bundle).
 
 
-```php
+{% highlight php %}
 <?php
-
 use Aura\SqlMapper_Bundle\Filter;
 
 /**
@@ -70,4 +69,5 @@ class MailLogGatewayFilter extends Filter
         return $subject;
     }
 }
-```
+?>
+{% endhighlight %}
