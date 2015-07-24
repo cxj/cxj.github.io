@@ -69,5 +69,16 @@ class MailLogGatewayFilter extends Filter
         return $subject;
     }
 }
+
+//
+// Using this filter in your Aura\SqlMapper_Bundle\AbstractGateway object.
+//
+
+$q = new ConnectedQueryFactory(new QueryFactory('sqlite'));
+
+$f = new MailLogGatewayFilter();
+
+$gateway = new MailLogGateway($this->connectionLocator, $q, $f);
+
 ?>
 {% endhighlight %}
