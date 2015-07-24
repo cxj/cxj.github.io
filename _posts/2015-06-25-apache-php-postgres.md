@@ -3,7 +3,7 @@ layout: post
 title: The Curious Case of Apache, PHP and Postgres
 ---
 
-Like many development shops, we use the Apache PHP module (modphp) with
+Like many IT shops, we use the Apache PHP module (modphp) with
 our webserver for our PHP-driven web applications.  We also use Postgres as
 our primary database.  We have a mix of other languages which also use
 the Postgres database, either as server applications or batch processes.
@@ -11,7 +11,7 @@ the Postgres database, either as server applications or batch processes.
 We wanted to better secure our database, and have fewer passwords floating
 around in files and active applications.
 
-The Postgres API library (written in C, `libpq`) provides several methods of
+The Postgres API library (`libpq`, written in C) provides several methods of
 doing authentication which are helpful in improving security.  We evaluated
 two of these.
 
@@ -23,7 +23,7 @@ and the other was use of the
 
 Both methods are portable across any language which uses the libpq library, so
 it seemed like one or the other, or both, would be a good fit for our
-environment.  In initial testing from the command line, all appeared to work
+environment.*  In initial testing from the command line, all appeared to work
 well.  Then we started testing Apache PHP, and encountered strange problems.
 
 First, PHP could not find the Password File or the Connection Service File.
@@ -73,3 +73,8 @@ web applications.
 
 This result leaves me unsatisfied, so I have not given up on getting to
 the bottom of this problem and finding a better solution.
+
+
+*We only use a very little Java.  Unfortunately JDBC does not use the
+standard Postgres library `libpq` and so Java has no idea about these
+files.
